@@ -1,0 +1,342 @@
+:root {
+    /* header footer */
+    --light-bg-color: #e28000;
+    --dark-bg-color: #333;
+
+    --light-color: #fff;
+    --dark-color: #e28000;
+
+    /* main */
+    --light-bg-color-main: #fff;
+    --dark-bg-color-main: #111;
+
+    --light-color-main: #000;
+    --dark-color-main: #fff;
+
+    /* font size */
+    --font-size-3: 3rem;
+    --font-size-2: 2rem;
+    --font-size-15: 1.5rem;
+    --font-size-1: 1rem;
+
+}
+
+/* theme class */
+
+.light-bg-color {
+    background-color: var(--light-bg-color);
+}
+
+.dark-bg-color {
+    background-color: var(--dark-bg-color);
+}
+
+.light-color {
+    color: var(--light-color);
+}
+
+.dark-color {
+    color: var(--dark-color);
+}
+
+.light-bg-color-main {
+    background-color: var(--light-bg-color-main);
+}
+
+.dark-bg-color-main {
+    background-color: var(--dark-bg-color-main);
+}
+
+.light-color-main {
+    color: var(--light-color-main);
+}
+
+.dark-color-main {
+    color: var(--dark-color-main);
+}
+
+/* font size class */
+
+.font-size-3-pos-1 {
+    font-size: calc(var(--font-size-3) - 0.5rem);
+}
+
+.font-size-3-pos-2 {
+    font-size: var(--font-size-3);
+}
+
+.font-size-3-pos-3 {
+    font-size: calc(var(--font-size-3) + 0.5rem);
+}
+
+.font-size-3-pos-4 {
+    font-size: calc(var(--font-size-3) + 1rem);
+}
+
+.font-size-3-pos-5 {
+    font-size: calc(var(--font-size-3) + 1.5rem);
+}
+
+.font-size-2-pos-1 {
+    font-size: calc(var(--font-size-2) - 0.4rem);
+}
+
+.font-size-2-pos-2 {
+    font-size: var(--font-size-2);
+}
+
+.font-size-2-pos-3 {
+    font-size: calc(var(--font-size-2) + 0.4rem);
+}
+
+.font-size-2-pos-4 {
+    font-size: calc(var(--font-size-2) + 0.8rem);
+}
+
+.font-size-2-pos-5 {
+    font-size: calc(var(--font-size-2) + 1.2rem);
+}
+
+.font-size-15-pos-1 {
+    font-size: calc(var(--font-size-15) - 0.3rem);
+}
+
+.font-size-15-pos-2 {
+    font-size: var(--font-size-15);
+}
+
+.font-size-15-pos-3 {
+    font-size: calc(var(--font-size-15) + 0.3rem);
+}
+
+.font-size-15-pos-4 {
+    font-size: calc(var(--font-size-15) + 0.6rem);
+}
+
+.font-size-15-pos-5 {
+    font-size: calc(var(--font-size-15) + 0.9rem);
+}
+
+.font-size-1-pos-1 {
+    font-size: calc(var(--font-size-1) - 0.2rem);
+}
+
+.font-size-1-pos-2 {
+    font-size: var(--font-size-1);
+}
+
+.font-size-1-pos-3 {
+    font-size: calc(var(--font-size-1) + 0.2rem);
+}
+
+.font-size-1-pos-4 {
+    font-size: calc(var(--font-size-1) + 0.4rem);
+}
+
+.font-size-1-pos-5 {
+    font-size: calc(var(--font-size-1) + 0.6rem);
+}
+
+/* general style */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*:focus-visible {
+    outline: 0.2rem solid #368ada;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* header */
+
+header .container {
+    display: flex;
+    height: 8rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .title {
+    font-weight: bold;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    margin: 1rem;
+}
+
+header nav ul li:hover, header nav ul li:focus-visible {
+    text-decoration: underline;
+}
+
+/* main */
+
+main .container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+main .container .w100 {
+    width: 100%;
+}
+
+main .container .w33 {
+    width: 33.33%;
+}
+
+main .container .inner {
+    margin: 0.5rem;
+}
+
+main .container .w100 .inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    background-image: url("img/sunset.jpeg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main .container .w100 .inner h1 {
+    font-weight: bold;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+main .container .w33 .inner {
+    padding: 1rem;
+}
+
+main .container .inner h2 {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #e28000;
+}
+
+main .container .inner p {
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
+/* footer */
+
+footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+footer .container .w25 {
+    width: 25%;
+}
+
+footer .container .w100 {
+    width: 100%;
+}
+
+footer .container .w25 p {
+    font-weight: bold;
+}
+
+footer .container .w25 nav ul li {
+    margin: 0.5rem 0;
+}
+
+footer .container .w25 nav ul li:hover, footer .container .w25 nav ul li:focus-visible {
+    text-decoration: underline;
+}
+
+footer .container .w100 {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+/* usability menu */
+
+#user_menu {
+    display: none;
+    background-color: #368ada;
+    color: #fff;
+    width: fit-content;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+#user_menu article {
+    display: flex;
+    justify-content: end;
+    padding-bottom: 0.5rem;
+}
+
+#user_menu article img {
+    filter: invert(1);
+}
+
+#user_menu article img:hover, #user_menu article img:focus-visible {
+    filter: invert(0);
+}
+
+#user_menu p {
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+#user_menu p#sizetext {
+    font-weight: normal;
+    font-style: italic;
+    padding-top: 0.5rem;
+}
+
+#user_menu button {
+    border-radius: 0;
+    border: none;
+    padding: 0.5rem;
+    background-color: #fff;
+    color: #368ada;
+    margin-bottom: 2rem;
+}
+
+#user_menu button#dark {
+    background-color: #333;
+}
+
+#user_menu button:hover, #user_menu button:focus-visible {
+    background-color: #e28000 !important;
+    color: #fff;
+}
+
+#user_menu input {
+    width: 100%;
+}
+
+#user_open {
+    background-color: #368ada;
+    width: fit-content;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    padding: 1rem;
+}
+
+#user_open:hover img , #user_open:focus-visible img {
+    filter: invert(0);
+}
+
+#user_open img {
+    filter: invert(1);
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebPage Lorem</title>
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    
+    <header id="header" class="light-bg-color light-color font-size-1-pos-2">
+
+        <section class="container">
+
+            <p id="title" class="title font-size-2-pos-2">WebPage Lorem</p>
+
+            <nav>
+                <ul>
+                    <li tabindex="0">Lorem</li>
+                    <li tabindex="0">Ipsum</li>
+                    <li tabindex="0">Dolor</li>
+                    <li tabindex="0">Sit</li>
+                </ul>
+            </nav>
+
+        </section>
+
+    </header>
+
+    <main id="main" class="light-bg-color-main light-color-main font-size-1-pos-2">
+
+        <section class="container">
+
+            <article class="w100" tabindex="0">
+                <section class="inner">
+                    <h1 id="titlepage" class="font-size-3-pos-2">Lorem ipsum dolor sit amet</h1>
+                </section>
+            </article>
+            
+            <article class="w33" tabindex="0">
+                <section class="inner">
+                    <h2 id="loremone" class="font-size-2-pos-2">Lorem one</h2>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat sunt aperiam vel veritatis tempore aliquam, quia nihil nostrum corrupti, dolor reiciendis quibusdam quasi laborum! Eos impedit obcaecati tenetur omnis vero?
+                    </p>
+                </section>
+            </article>
+
+            <article class="w33" tabindex="0">
+                <section class="inner">
+                    <h2 id="loremtwo" class="font-size-2-pos-2">Lorem two</h2>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat sunt aperiam vel veritatis tempore aliquam, quia nihil nostrum corrupti, dolor reiciendis quibusdam quasi laborum! Eos impedit obcaecati tenetur omnis vero?
+                    </p>
+                </section>
+            </article>
+
+            <article class="w33" tabindex="0">
+                <section class="inner">
+                    <h2 id="loremthree" class="font-size-2-pos-2">Lorem three</h2>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat sunt aperiam vel veritatis tempore aliquam, quia nihil nostrum corrupti, dolor reiciendis quibusdam quasi laborum! Eos impedit obcaecati tenetur omnis vero?
+                    </p>
+                </section>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer id="footer" class="light-bg-color light-color font-size-1-pos-2">
+
+        <section class="container">
+
+            <article class="w25">
+                <p id="menuone" class="font-size-15-pos-2">Menu one</p>
+                <nav>
+                    <ul>
+                        <li tabindex="0">Lorem</li>
+                        <li tabindex="0">Ipsum</li>
+                        <li tabindex="0">Dolor</li>
+                        <li tabindex="0">Sit</li>
+                    </ul>
+                </nav>
+            </article>
+            
+            <article class="w25">
+                <p id="menutwo" class="font-size-15-pos-2">Menu two</p>
+                <nav>
+                    <ul>
+                        <li tabindex="0">Lorem</li>
+                        <li tabindex="0">Ipsum</li>
+                        <li tabindex="0">Dolor</li>
+                        <li tabindex="0">Sit</li>
+                    </ul>
+                </nav>
+            </article>
+
+            <article class="w25">
+                <p id="menuthree" class="font-size-15-pos-2">Menu three</p>
+                <nav>
+                    <ul>
+                        <li tabindex="0">Lorem</li>
+                        <li tabindex="0">Ipsum</li>
+                        <li tabindex="0">Dolor</li>
+                        <li tabindex="0">Sit</li>
+                    </ul>
+                </nav>
+            </article>
+
+            <article class="w25">
+                <p id="menufour" class="font-size-15-pos-2">Menu four</p>
+                <nav>
+                    <ul>
+                        <li tabindex="0">Lorem</li>
+                        <li tabindex="0">Ipsum</li>
+                        <li tabindex="0">Dolor</li>
+                        <li tabindex="0">Sit</li>
+                    </ul>
+                </nav>
+            </article>
+
+            <article class="w100">
+                <p>&copy; 2024 | Gabriel Serrat Espejo</p>
+            </article>
+
+        </section>
+
+    </footer>
+
+    <section id="user_open" onclick="userOpen()" onkeypress="userOpen()" tabindex="0">
+        <img src="img/config.png" alt="config" />
+    </section>
+
+    <section id="user_menu">
+        <article>
+            <img src="img/close.png" alt="close" onclick="userClose()" onkeypress="userClose()" tabindex="0" />
+        </article>
+        <p id="user_theme" class="font-size-15-pos-2">Change theme</p>
+        <button id="light" class="font-size-1-pos-2" onclick="setLight()">Light theme</button>
+        <button id="dark" class="font-size-1-pos-2" onclick="setDark()">Dark theme</button>
+
+        <p id="user_size" class="font-size-15-pos-2">Change font size</p>
+        <input type="range" id="size" min="1" max="5" value="2" onchange="changeSize()" />
+        <p id="sizetext" class="font-size-1-pos-2">2: Normal size</p>
+    </section>
+
+</body>
+</html>
